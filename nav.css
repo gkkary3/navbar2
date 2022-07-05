@@ -27,10 +27,14 @@ ul,li,ol{
     padding: 0.5rem 1rem;
 }
 .nav-title{
+    width:150px;
     margin-top:0.3rem;
     margin-right:1rem;
     font-weight: 400;
     color:#bbd0ff;
+}
+.logo{
+    width:150px;
 }
 .navbarWrap{
     display:flex;
@@ -61,8 +65,9 @@ ul,li,ol{
 }
 
 .nav-in{
+    margin-top: 10px;
+    display: flex;
     border:0.5px solid #bde0fe;
-    height:100%;
 }
 .login-btn{
     /* border:0.5px solid #bde0fe; */
@@ -105,7 +110,7 @@ ul,li,ol{
         right:10px;
         
     }
-    .nav-nav,.login-btn,.signUp-btn{
+    .nav-nav,.nav-in{
         display:none;
         justify-content: center;
     }

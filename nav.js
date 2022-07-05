@@ -1,12 +1,13 @@
 const toggleBtn = document.querySelector('.ham');
 const nav = document.querySelector('.nav-nav');
-const loginBtn = document.querySelector('.login-btn');
-const signUpBtn = document.querySelector('.signUp-btn');
+const navin = document.querySelector('.nav-in');
+// const navin = document.querySelector('nav-in');
+// const signUpBtn = document.querySelector('.signUp-btn');
 
 toggleBtn.addEventListener('click',()=>{
     nav.classList.toggle('active');
-    loginBtn.classList.toggle('active');
-    signUpBtn.classList.toggle('active');
+    navin.classList.toggle('active');
+    // signUpBtn.classList.toggle('active');
 
     
 });
