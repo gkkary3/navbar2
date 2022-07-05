@@ -1,0 +1,101 @@
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+    font-family: "Nunito", sans-serif;
+}
+/* body{
+    background-color: hotpink;
+} */
+a{
+    text-decoration: none;
+    color:black;
+
+}
+ul,li,ol{
+    list-style: none;
+}
+#mainNavbar1{
+
+    font-size: 1.5rem;
+    font-weight: 100;
+}
+.nav{
+    display:flex;
+    justify-content: flex-start;
+    /* align-items: center; */
+    padding: 0.5rem 1rem;
+}
+.nav-title{
+    margin-top:0.3rem;
+    margin-right:1rem;
+    font-weight: 400;
+    color:#bbd0ff;
+}
+.navbarWrap{
+    display:flex;
+    align-items: center;
+    flex-grow:1;
+}
+.nav-nav{
+    display:flex;
+}
+/* .navbar-nav > li{
+    border:1px solid black;
+} */
+.nav-menu{
+    display:inline-block;
+    width:120px;
+    text-align: center;
+    padding:0.5rem;
+    transition-delay: 0.15s;
+    box-shadow: 0 .5rem 1 darkblue
+}
+.nav-menu:hover{
+    background-color:#bbd0ff;
+    color:white;
+}
+.nav-hover:hover{
+    transition-delay: 0.15s;
+    color:black;
+}
+
+.login-btn{
+    display: inline-block;
+    /* margin-right:5px; */
+    padding:10px;
+    width:120px;
+    text-align: center;
+}
+.signUp-btn{
+    background-color: #c8b6ff;
+    color:white;
+    width:120px;
+    padding:10px;
+}
+.ham{
+    display:none;
+}
+.cursor{
+    cursor: pointer;
+}
+@media (max-width: 768px){
+    nav, nav ul{
+        flex-direction: column;
+        /* justify-content: flex-start; */
+        align-items: flex-start;
+        
+    }
+    .ham{
+        display:inline-block;
+        position: fixed;
+        right:10px;
+        
+    }
+    .nav-nav,.login-btn,.signUp-btn{
+        display:none;
+    }
+}
+.active{
+    display:flex;
+}
