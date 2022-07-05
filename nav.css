@@ -60,17 +60,30 @@ ul,li,ol{
     color:black;
 }
 
+.nav-in{
+    border:0.5px solid #bde0fe;
+    height:100%;
+}
 .login-btn{
+    /* border:0.5px solid #bde0fe; */
+    border-right:none;
     display: inline-block;
     /* margin-right:5px; */
+    font-size:15px;
     padding:10px;
-    width:120px;
+    width:100px;
     text-align: center;
 }
+.login-btn:hover{
+    color:#a2d2ff;
+}
 .signUp-btn{
-    background-color: #c8b6ff;
+    display:inline-block;
+    background-color: #a2d2ff;
+    text-align: center;
+    font-size:15px;
     color:white;
-    width:120px;
+    width:100px;
     padding:10px;
 }
 .ham{
@@ -94,6 +107,7 @@ ul,li,ol{
     }
     .nav-nav,.login-btn,.signUp-btn{
         display:none;
+        justify-content: center;
     }
 }
 .active{
